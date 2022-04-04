@@ -20,6 +20,7 @@
             
             <h1>Hello Bravo!</h1>
             <List />
+            <Poetry/>
             </>
           )
         }
@@ -55,7 +56,36 @@
               )          
             }
       }
+      class Poetry extends React.Component {
+        render(){
+          return (
+            <>
+            <p>
+              React seems easy
+              But its actually complicated
+              Once upon a time
 
+              Once upon a time
+              I thought I knew everything
+              But I don't 
+
+              What is even a Component
+              I guess we'll find out 
+              The end :)
+
+              
+              
+            </p>
+
+
+
+
+
+            </>
+                    )
+           
+        }
+      }
       const domContainer = document.querySelector('#react-container');
       ReactDOM.render(<HelloReact />, domContainer);
     </script>
