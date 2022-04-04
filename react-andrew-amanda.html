@@ -13,7 +13,7 @@
   <div id="react-container"></div>
     <script type="text/babel">
     
-    
+
     class App extends React.Component{
       render(){
         return(
@@ -21,6 +21,7 @@
           <h1> Bravo </h1>
           <Classmates /> 
           <Footer />
+          <DaysOfTheWeek/>
           </>
         )
       }
@@ -48,6 +49,25 @@
                 <footer>Andrew, Amanda</footer>
             )
         }
+    }
+
+    class DaysOfTheWeek extends React.Component{
+      render(){
+        return(
+            <ul>
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+            </ul>
+            
+            
+            
+        )
+      }
     }
 
 
