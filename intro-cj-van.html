@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Intro to React</title>
+
+</head>
+<body>
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <>
+          <h1>2022 Bravo</h1>
+          <Content />
+          </>
+        )
+      }
+    }
+    class Content extends React.Component{
+    render(){
+      return(
+        <>
+          <h2>Student Names</h2>
+          <ul>
+            <li>Amanda</li>
+            <li>Andrew</li>
+            <li>Cj</li>
+            <li>Dawrin</li>
+            <li>Dustin</li>
+            <li>Earl</li>
+            <li>Jack</li>
+            <li>Jimmy</li>
+            <li>Johnathan</li>
+            <li>Jose</li>
+            <li>Kathy</li>
+            <li>Lj</li>
+            <li>Natalia</li>
+            <li>Neco</li>
+            <li>Samir</li>
+            <li>Tameka</li>
+            <li>Toni</li>
+            <li>Van</li>
+            <li>Vanessa</li>
+            <li>Vicente</li>
+            <li>Victor</li>
+            <li>Zane</li>
+          </ul>
+        </>
+      )
+    }
+  }
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+  </script>
+</body>
+</html>
