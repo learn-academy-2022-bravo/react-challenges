@@ -7,6 +7,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <title>Intro to React</title>
 
+
 </head>
 <body>
 
@@ -20,6 +21,10 @@
           <h1> Bravo </h1>
           <List />
           <Footer />
+          <SecondHeader />
+          <ThirdHeader />
+          <FourthHeader />
+          <VideoTime />
           </>
         )
       }
@@ -53,7 +58,48 @@
         )
       }
     }
-
+    class SecondHeader extends React.Component{
+      render(){
+        return(
+          <>
+        <h2>
+          GIT PULL
+        </h2>
+          </>
+        )
+      }
+    }
+    class ThirdHeader extends React.Component{
+      render(){
+        return(
+          <>
+        <h2>
+          GIT CHECKOUT 
+        </h2>
+          </>
+        )
+      }
+    }
+    class FourthHeader extends React.Component{
+      render(){
+        return(
+          <>
+        <h2>
+          CD IN
+        </h2>
+          </>
+        )
+      }
+    }
+    class VideoTime extends React.Component{
+      render(){
+        return(
+          <>
+          <iframe width="auto" height="auto" src="giphy.webp" frameborder="0" allowfullscreen></iframe>
+          </>
+        )
+      }
+    }
 
 
     const domContainer = document.querySelector('#react-container')
