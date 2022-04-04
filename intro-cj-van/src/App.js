@@ -4,7 +4,8 @@ import './App.css';
 import Header from './components/Header'
 import Profile from './components/Profile'
 import Footer from './components/Footer'
-
+import Favorites from './components/Favorites'
+import LeastFavorites from './components/LeastFavorites'
 
 class App extends Component{
 render(){
@@ -13,6 +14,8 @@ render(){
       <div className="App">
           <Header />
           <Profile />
+          <Favorites />
+          
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -27,6 +30,7 @@ render(){
             Learn React
           </a>
         </header>
+        <LeastFavorites />
         <Footer />
       </div>
       </>
