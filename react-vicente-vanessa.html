@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Intro to React</title>
+
+</head>
+<body>
+
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <>
+          <h1> Hello Bravo! </h1>
+          <h2> Let's do a role call!</h2>
+          <ClassMates/>
+          </>
+        )
+      }
+    }
+
+    class ClassMates extends React.Component {
+        render() {
+            return(
+            <>
+                <ul>
+                    <li>Darwin</li>
+                    <li> Samir</li>
+                    <li> Jonathan</li>
+                    <li> Kathy</li>
+                    <li>Jimmy</li>
+                    <li>Neco</li>
+                    <li>Toni</li>
+                    <li> Cj</li>
+                    <li> LJ</li>
+                    <li>Earl</li>
+                    <li>Jack</li>
+                    <li>Amanda</li>
+                    <li>Zane</li>
+                    <li>Victor</li>
+                    <li>Vicente</li>
+                    <li>Jose</li>
+                    <li>Natalia</li>
+                    <li> Dustin</li>
+                    <li> Tameka</li>
+                    <li>Vanessa</li>
+                    <li>Andrew</li>
+                    <li>Van</li>               
+                </ul>
+                </>
+            )
+            }      
+            
+    }
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App/>, domContainer)
+  </script>
+  <footer>
+      Vicente Saldana and Vanessa Marin
+  </footer>
+</body>
+</html>
+
+
+ <!-- 
+// As a user, I see a Header component with the name of your cohort
+// As a user, I can see a Content component that contains a list of all your classmates
+// As a user, I can see a Footer component with your name -->
