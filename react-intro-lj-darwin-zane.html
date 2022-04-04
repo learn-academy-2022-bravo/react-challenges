@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+
+  </head>
+  <body>
+
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      class HelloReact extends React.Component{
+        render(){
+          return(
+            <>
+            
+            <h1>Hello Bravo!</h1>
+            <List />
+            </>
+          )
+        }
+      }
+      class List extends React.Component {
+          render(){
+              return (
+              <>
+              <ul>
+                <li>Zane</li>
+                <li>Darwin</li>
+                <li>LJ</li>
+                <li>Victor</li>
+                <li>Tameka</li>
+                <li>Amanda</li>
+                <li>Andrew</li>
+                <li>CJ</li>
+                <li>Dustin</li>
+                <li>Earl</li>
+                <li>Jack</li>
+                <li>Kathy</li>
+                <li>Jimmy</li>
+                <li>Jose</li>
+                <li>Natalia</li>
+                <li>Jonathan</li>
+                <li>Samir</li>
+                <li>Toni</li>
+                <li>Neco</li>
+                <li>Van</li>
+                <li>Vincente</li>
+                </ul>
+              </>
+              )          
+            }
+      }
+
+      const domContainer = document.querySelector('#react-container');
+      ReactDOM.render(<HelloReact />, domContainer);
+    </script>
+    <footer id="footer">Darwin, Zane, LJ</footer>
+  </body>
+</html>
