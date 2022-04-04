@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Intro to React</title>
+
+</head>
+<body>
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <>
+            <h1>Welcome Bravo Cohort!</h1>
+            <h2>Members of Bravo</h2>
+            <List/>
+            <h3>Challenges so far:</h3>
+            <Challenges/>
+          </>
+        )
+      }
+    }
+    class List extends React.Component {
+      render() {
+        return(
+          <>
+            <ul>
+              <li>Jimmy</li>
+              <li>Natalia</li>
+              <li>Victor</li>
+              <li>LJ</li>
+              <li>Toni</li>
+              <li>Zane</li>
+            </ul>
+          </>
+        )
+      }
+    }
+    class Challenges extends React.Component {
+      render () {
+        return(
+        <>
+          <ol>
+            <li>Conditionals</li>
+            <li>Arrays</li>
+            <li>Loops</li>
+            <li>Functions</li>
+            <li>HOF</li>
+            <li>Testing with Jest</li>
+            <li>Objects</li>
+            <li>Classes</li>
+            <li>Class Inheritance</li>
+            <li>React</li>
+          </ol>
+        </>
+        )
+      }
+    }
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+  </script>
+      <a class="learn" href="https://www.learnacademy.org/?utm_medium=ppc&utm_term=learn%20academy&utm_campaign=Brand%20-%20Search%20-%20California&utm_source=adwords&hsa_net=adwords&hsa_ver=3&hsa_kw=learn%20academy&hsa_acc=6150272361&hsa_ad=507542480549&hsa_src=g&hsa_cam=641636132&hsa_tgt=kwd-54825541336&hsa_mt=e&hsa_grp=32079301395&gclid=CjwKCAjwrqqSBhBbEiwAlQeqGgiRZj6EjjvPNg8sfy6FPWlxiBmBpSkcDD6eyDeoAkdTxvJGY2v_EBoCD_AQAvD_BwE" target="_blank">
+        <button type="button" class="learn">LEARN More!</button>
+      </a>
+      <br>
+      <br>
+  <footer>&copy; JV-ND</footer>
+</body>
+</html>
