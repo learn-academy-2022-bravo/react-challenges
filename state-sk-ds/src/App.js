@@ -19,7 +19,15 @@ import React, { Component } from 'react'
 export default class App extends Component {
   render() {
     return (
-      <div>App</div>
+      <div>
+        <div style={{
+          border: "5px solid black",
+          width: "100px",
+          height: "100px"
+        }}>
+
+        </div>
+      </div>
     )
   }
 }
