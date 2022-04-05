@@ -7,6 +7,7 @@ class App extends Component{
     return(
       <>
         <h1>Challenge Color Box</h1>
+        <Box />
       </>
     )
   }
