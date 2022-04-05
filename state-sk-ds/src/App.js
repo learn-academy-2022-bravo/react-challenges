@@ -17,16 +17,29 @@
 import React, { Component } from 'react'
 
 export default class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { colors: ["green", "blue", "yellow", "red", "purple", "orange"] }
+  }
+
+
+
+
+
   render() {
+
     return (
       <div>
-        <div style={{
+        <div id="theBox" style={{
           border: "5px solid black",
           width: "100px",
-          height: "100px"
+          height: "100px",
+          backgroundColor: "white",
+          color: 'black'
         }}>
-
+          {this.state.colors}
         </div>
+        <button id="theButton">Name of Color</button>
       </div>
     )
   }
