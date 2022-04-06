@@ -30,6 +30,8 @@ export default class App extends Component {
         <Box />
         <Box />
         <Box />
+        <Box />
+        <Box />
       </>
     )
   }

@@ -22,7 +22,7 @@ export default class App extends Component {
         return (
             <div>
                 <div id="theBox" style={{
-                    border: "5px solid black",
+                    border: "1px solid black",
                     width: "100px",
                     height: "100px",
                     backgroundColor: this.state.backgroundColor,
@@ -30,7 +30,7 @@ export default class App extends Component {
                 }} onClick={this.randomColor}>
                     {this.state.colors}
                 </div>
-                <button id="theButton" onClick={this.randomColor}>Change Color of Box</button>
+                {/* <button id="theButton" onClick={this.randomColor}>Change Color of Box</button> */}
             </div>
         )
     }
