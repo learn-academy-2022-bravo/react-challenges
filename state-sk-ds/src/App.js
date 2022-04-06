@@ -26,7 +26,7 @@ import Box from './components/Box'
 export default class App extends Component {
   render() {
     return (
-      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", marginTop: "20px" }}>
         <Box />
         <Box />
         <Box />
