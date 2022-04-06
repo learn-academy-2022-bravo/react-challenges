@@ -30,7 +30,10 @@ export default class App extends Component {
                 }} onClick={this.randomColor}>
                     {this.state.colors}
                 </div>
-                {/* <button id="theButton" onClick={this.randomColor}>Change Color of Box</button> */}
+                <div>
+
+                    <button id="theButton">Remove Box</button>
+                </div>
             </div>
         )
     }
