@@ -26,13 +26,17 @@ import Box from './components/Box'
 export default class App extends Component {
   render() {
     return (
-      <>
+      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
         <Box />
         <Box />
         <Box />
         <Box />
         <Box />
-      </>
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+      </div>
     )
   }
 }
