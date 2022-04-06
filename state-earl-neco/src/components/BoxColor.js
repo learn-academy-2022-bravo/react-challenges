@@ -4,13 +4,14 @@ class BoxColor extends Component {
   constructor(props){
     super(props)
     this.state = {
-      color:["white", "red", "blue", "purple"]
-      
+      color:["white", "red", "blue", "purple"],
+
+
     }
   }
   changeColor = () => {
     for (let i=0; i < this.state.color.length; i++){
-      let nextColor=0
+
       this.setState({color: this.state.color[i]})
     }
   }
@@ -23,6 +24,9 @@ class BoxColor extends Component {
     return(
       <div style={{ height:"100px", width:"100px", border: "2px solid black",backgroundColor: this.state.color}}
       onClick= {this.changeColor}>
+
+      // <div style={{ height:"100px", width:"100px", border: "2px solid black",backgroundColor: this.state.color}}
+      // onClick= {this.colorPicker}>
 
       </div>
     )
