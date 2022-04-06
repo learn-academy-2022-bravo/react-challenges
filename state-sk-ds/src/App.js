@@ -21,7 +21,8 @@ export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      colors: "NULL",
+      colors: "",
+      backgroundColor: "white"
     }
   }
 
@@ -30,7 +31,7 @@ export default class App extends Component {
     let colorSelection = ["green", "blue", "yellow", "red", "purple", "orange"]
     let randomizer = colorSelection[Math.floor(Math.random() * colorSelection.length)]
 
-    this.setState({ colors: randomizer })
+    this.setState({ colors: randomizer, backgroundColor: randomizer })
   }
 
   render() {
@@ -41,7 +42,7 @@ export default class App extends Component {
           border: "5px solid black",
           width: "100px",
           height: "100px",
-          backgroundColor: "white",
+          backgroundColor: this.state.backgroundColor,
           color: 'black'
         }} onClick={this.randomColor}>
           {this.state.colors}
