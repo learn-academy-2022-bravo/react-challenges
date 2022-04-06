@@ -8,18 +8,16 @@ class Squares extends Component{
   }
 }
 
-addColorChange = () => {
-  this.setState({bgColor: "blue"})
-}
 
-// changeText =(text) => {
-//   this.setState ({text})
-// }
+addColorChange = () => {
+  const colorArray = ["green", "blue", "yellow", "red", "purple", "orange"]
+  const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)]
+  this.setState({bgColor: randomColor })
+}
 
   render(){
     return(
       <>
-        <p>Breaks: {this.state.breaks}</p> {/* this.state.breaks is connecting to the "addBreak" function  */}
         <button className="squares1" onClick= {this.addColorChange} style={{color: "black", background:this.state.bgColor}}> {this.state.bgColor} </button>
       </>
     )
