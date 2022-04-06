@@ -19,12 +19,18 @@ import React, { Component } from 'react'
 export default class App extends Component {
   constructor(props) {
     super(props)
-    this.state = { colors: ["green", "blue", "yellow", "red", "purple", "orange"] }
+    this.state = {
+      colors: "NULL",
+    }
   }
 
+  randomColor = () => {
 
+    let colorSelection = ["green", "blue", "yellow", "red", "purple", "orange"]
+    let randomizer = colorSelection[Math.floor(Math.random() * colorSelection.length)]
 
-
+    this.setState({ colors: randomizer })
+  }
 
   render() {
 
@@ -39,7 +45,7 @@ export default class App extends Component {
         }}>
           {this.state.colors}
         </div>
-        <button id="theButton">Name of Color</button>
+        <button id="theButton" onClick={this.randomColor}>Name of Color</button>
       </div>
     )
   }
