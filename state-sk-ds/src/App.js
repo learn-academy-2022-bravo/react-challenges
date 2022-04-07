@@ -22,7 +22,9 @@ export default class App extends Component {
     this.state = { colors: ["green", "blue", "yellow", "red", "purple", "orange"] }
   }
 
-
+wordPlacer() {
+  this.setState({colors: "red"})
+}
 
 
 
@@ -39,7 +41,7 @@ export default class App extends Component {
         }}>
           {this.state.colors}
         </div>
-        <button id="theButton">Name of Color</button>
+        <button id="theButton" onClick={this.wordPlacer}>Name of Color</button>
       </div>
     )
   }
