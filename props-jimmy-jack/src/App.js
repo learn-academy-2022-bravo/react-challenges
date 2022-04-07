@@ -26,7 +26,7 @@
 // add log code to diceRoller method
 
 // --As a user, I can see the roll log continue to grow as I roll the dice
-
+import './App.css'
 import React, { Component } from 'react'
 import Dice from './components/Dice'
 import Rolls from './components/Rolls'
@@ -35,15 +35,32 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      diceFace: [1, 2, 3, 4, 5, 6]
+      diceFace: [1, 2, 3, 4, 5, 6],
+      currentNumber: 0,
+      previousNumber: []
     }
   }
-
+  diceRoller = () => {
+    let nextNumber = Math.floor(Math.random() *
+    this.state.diceFace.length)
+      this.setState({currentNumber: nextNumber,
+      previousNumber: [...this.state.previousNumber,
+      this.state.diceFace[nextNumber]]
+    })
+  }
+clearRoll = () => {
+  this.setState({previousNumber: []})
+}
   render(){
     return(
-        <div>
-          <Dice number={ this.state.diceFace[0] } />
-        </div>
+      <div className="box">
+        <button class = "resetButton" onClick = {this.clearRoll} > Reset </button>
+        <Dice
+        number = {this.state.diceFace[this.state.currentNumber]}
+        roll = {this.diceRoller}
+        />
+        <Rolls previousNumber = {this.state.previousNumber} />
+      </div>
     )
   }
 }
