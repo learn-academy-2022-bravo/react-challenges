@@ -38,13 +38,12 @@ class App extends Component{
       diceFace: [1, 2, 3, 4, 5, 6]
     }
   }
+
   render(){
     return(
-      <>
-      <div>
-        <Dice number={ this.state.diceFace[5] } />
-      </div>
-      </>
+        <div>
+          <Dice number={ this.state.diceFace[0] } />
+        </div>
     )
   }
 }

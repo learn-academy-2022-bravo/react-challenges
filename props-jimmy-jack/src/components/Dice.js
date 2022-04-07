@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 class Dice extends Component{
   render(){
     return(
-      <h1>The number is { this.props.number }!</h1>
+    <div>
+      <h1>{ this.props.number }</h1>
+    </div>
     )
   }
 }
