@@ -1,19 +1,23 @@
 .rolls {
   border: solid 10px black;
   width: 200px;
-  margin:100px;
-  text-align: left;
-
+  text-align: center;
 }
-div.dice span :first-child {
-  text-align: left;
-  }
 .dice {
   border: solid 10px black;
   width: 200px;
-  margin:100px;
-  text-align: right;
-} 
-div.rolls span :last-child {
-text-align: right;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.master {
+
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nothing{
+    margin: center;
+    align-items: center;
 }

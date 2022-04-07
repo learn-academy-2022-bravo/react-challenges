@@ -13,7 +13,7 @@ class App extends Component {
       previousRolls: []
     }
   }
-  
+
 
   rollDice = () => {
     let randomRoll = Math.floor(Math.random() * this.state.diceRolls.length)
@@ -23,18 +23,28 @@ class App extends Component {
       this.state.diceRolls[randomRoll]]
     })
   }
-  
-  
+
+  refreshPage = () => {
+      window.location.reload(false);
+    }
+
   render() {
     return(
-      <>
+      <div className='nothing'>
         <h1>Roll Dice</h1>
-        <button onClick={this.rollDice}>Click box to roll!</button>
-        <Dice dice={this.state.currentDice}/>
+        <button onClick={this.refreshPage}>Reset Rolls</button>
+        <div className='master'>
+        <Dice dice={this.state.currentDice} onClick = {this.rollDice}/>
         <Rolls previousRolls={this.state.previousRolls} />
-      </>
+      </div>
+      </div>
     )
   }
 }
 
 export default App;
+
+
+
+// make our click box to roll button to be on actual box
+// onclick on dice.js from apps.js
