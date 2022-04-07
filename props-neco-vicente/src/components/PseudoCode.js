@@ -1,7 +1,9 @@
 
 // Using a well thought out state tree and nested component structure, construct an application that rolls a die and keeps track of the numbers rolled. Here is a wireframe to help you start planning your application:
+
 // //As a user, I can see an application called Dice Roller
 // // As a developer, I can create a React application with App.js as my stateful component
+
 //As a developer, I can create two child components that will accept props from App.js
 // As a user, I can click a box and see the outcome of my current "roll"
 // As a developer, I can pass a method from App.js to my dice component to display a number between 1 and 6

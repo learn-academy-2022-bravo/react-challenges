@@ -14,11 +14,9 @@
 }
 
 .App-header {
-  background-color: black;
-  min-height: 10vh;
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  flex-wrap: wrap; 
-  align-content: center; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -39,26 +37,10 @@
   }
 }
 
-.tile {
-  color: gold;
-  border: solid 5px black;
-  width: 300px;
-  margin: 75px; 
-  display: center;
-  justify-content: center;
-}
-
-.last {
-    color: gold;
-    border: solid 5px black;
-    width: 300px;
-    display: center;
-    margin: 75px; 
-    justify-content: center; 
-}
-
-.button {
-margin: 100px;
-width: 120px; 
-height: 50px;
+.div {
+  height: 200px;
+  width: 200px;
+  border: 15px black;
+  background-color: white;
+  outline-style: solid;
 }
