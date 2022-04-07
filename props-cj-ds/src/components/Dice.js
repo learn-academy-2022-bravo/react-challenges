@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 export default class Dice extends Component {
   render() {
     return (
-      <div className="game-container">
-          <h2>Click to Roll the Dice!</h2>
-      <img src={this.props.currentRollDice}
-            className="dice-img"
-            onClick={this.props.handleDiceRoll}
-      />
+      <div className="dice-container">
+        <h2>Click to roll the dice!</h2>
+        <img
+          className="dice-img"
+          src={this.props.currentRollImage}
+          onClick={this.props.handleDiceRoll}
+        />
       </div>
     )
   }
