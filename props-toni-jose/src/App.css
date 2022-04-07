@@ -1,7 +1,11 @@
 
 
 .box {
-  color: blue;
-  border: solid 2px black;
-  width: 200px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    color: blue;
+    border: solid 2px black;
+    width: 200px;
+    height: 200px;
 }
