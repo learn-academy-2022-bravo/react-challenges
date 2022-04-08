@@ -2,37 +2,34 @@ import React, { Component } from 'react';
 
 class Bad extends Component {
     
-    sayBla = (input) => {
-        // string to array
-        let inputArray = input.split('')
-         
+    // ** This replaces BLA for each word typed **
+    // sayBla = (input) => {
+    //     return input.split(' ').map(value => 'BLA ')
+    // }
 
-        // let mappedArray = inputArray.map(value => {
-        //     if (typeof inputArray[value] == 'string'){
-        //         return inputArray[value] = 'B' 
-        //     }
-        // })
-            // if (typeof inputArray[0] == 'string'){
-            //   return inputArray[0] = 'B' 
-            // } 
-            // } else if (typeof inputArray[1] == 'string'){
-            //     return inputArray[1] = 'L'  
-            // } else if (typeof inputArray[2] == 'string'){
-            //     return inputArray[2] = 'A'  
-            // }
-        // map to replace letters
-        // inputArray.map(value,index => )
-    }
+    sayBla = (input) => {
+    const list = input.split('')
+    return list.map((currElement, index) => {
+        if (index % 4 == 0){
+            return currElement = 'B'
+        } else if (index % 4 == 1) {
+            return currElement = 'L'
+        } else if (index % 4 == 2) {
+            return currElement = 'A'
+        } else if (index % 4 == 3) {
+            return currElement = ' '
+        }
+    })
+}
+
 
     render() {
     
         return (
             <>
                 <p>
-                Bad Robot says: 
-                {/* replace input with 'B', 'L', 'A' */}
-                
-                {this.sayBla(this.props.bad)}
+                Bad Robot says:  
+                <p>{this.sayBla(this.props.bad)}</p>
                 </p>
             </>
         );
