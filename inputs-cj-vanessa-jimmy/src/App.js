@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import GoodRobot from './components/GoodRobot'
 import BadRobot from './components/BadRobot'
-
+import reactStringReplace from 'react-string-replace';
+import ChoiceRobot from './components/ChoiceRobot'
 export default class App extends Component {
   constructor(props) {
     super(props)
@@ -25,6 +26,7 @@ export default class App extends Component {
      />
      <GoodRobot userInput={this.state.userInput} />
      <BadRobot userInput={this.state.userInput} />
+     <ChoiceRobot userInput={this.state.userInput} />
      </>
     )
   }
