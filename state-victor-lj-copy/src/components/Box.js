@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 class Box extends Component{
   constructor(props){
     super(props)
@@ -8,8 +7,6 @@ class Box extends Component{
       color: [""]
     }
   }
-
-
   colorOrder = () => {
      let colors = ["green", "blue", "yellow", "red", "purple", "orange"]
   
@@ -21,19 +18,17 @@ class Box extends Component{
       this.setState({color: ["green", "blue", "yellow", "red", "purple", "orange"]})
     }
   }
-
-
-
-
   render(){
     return(
       <>
       <div onClick={this.colorOrder} style={{ border: "5px solid black",height: "250px",width: "250px", background: this.state.color[this.state.breaks]}}>
       <p>{this.state.color[this.state.breaks]} </p>
+      {this.props.totalBoxes.map((card, index) => {
+          return <p key={index}>{card}</p>
+        })}
       </div>
       </>
     )
   }
 }
-
 export default Box
