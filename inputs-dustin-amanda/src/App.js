@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import BadRobot from './components/BadRobot';
 import GoodRobot from './components/GoodRobot';
-
+import WhisperRobot from './components/WhisperRobot';
+import HappyRobot from './images/HappyRobot.jpg'
 class App extends Component {
   constructor(props) {
     super(props)
@@ -19,14 +20,15 @@ class App extends Component {
     return (
       <>
       <h1> Listening Robot</h1>
+      <img src={HappyRobot}className="robot"/>
       <input
         type="text"
         value={this.state.userInput}
         onChange={this.handleChange}
         />
-        <p>Wassup {this.state.userInput}</p>
       <GoodRobot userInput={this.state.userInput}/>
       <BadRobot userInput={this.state.userInput}/>
+      <WhisperRobot userInput={this.state.userInput}/>
       </>
         
       
