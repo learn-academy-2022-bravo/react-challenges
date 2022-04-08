@@ -10,7 +10,7 @@ class GoodRobot extends Component {
     return(
       <>
         <p>
-          I am the Good Robot: { this.repeatInput(this.props.input) }
+          I am Legend: { this.repeatInput(this.props.input) }
         </p>
       </>
     )

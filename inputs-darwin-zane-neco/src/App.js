@@ -20,13 +20,14 @@ class App extends Component {
     console.log(this.props.userInput)
     return(
       <>
-        <h1>React Inputs and Events</h1>
+        <h1>Goooood Robot</h1>
         <input
           type="text"
           value={this.state.userInput}
           onChange={this.handleChange}
         />
         <GoodRobot input={this.state.userInput} />
+        <BadRobot input={this.state.userInput} />
       </>
     )
   }
