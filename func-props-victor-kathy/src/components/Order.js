@@ -7,6 +7,12 @@ class Order extends Component {
                 {this.props.food.map((value, index) => {
                     return(
                         <li>
+                            <p>
+                                One
+                            </p>
+                            <p>
+                                two
+                            </p>
                         </li>
                     )
                 })}
