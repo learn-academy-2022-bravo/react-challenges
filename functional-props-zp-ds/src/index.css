@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -36,10 +37,21 @@ button {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
+  background-color: rgb(171, 148, 114);
+  color: white;
+  padding: 20px 40px;
+  border: none;
 
 }
 
 .order-list {
   display: flex;
   flex-direction: column;
+}
+
+.main-container {
+  /* background-image: url("./images/rest.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -43,14 +43,20 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <FoodMenu
-          menu={this.state.menu}
-          addItem={this.addItem}
-        />
-        <FoodOrder
-          order={this.state.order}
-          total={this.state.total}
-        />
+        <div className="main-container">
+
+          <FoodMenu
+            menu={this.state.menu}
+            addItem={this.addItem}
+          />
+          <FoodOrder
+            order={this.state.order}
+            total={this.state.total}
+          />
+
+        </div>
+
+
       </>
     )
   }

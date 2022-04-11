@@ -4,7 +4,8 @@ export default class FoodMenu extends Component {
     render() {
         return (
             <>
-                <ul>
+                <h2>Food Menu</h2>
+                <ul className="backing">
                     {this.props.menu.map((item, index) => {
                         return (
                             <div key={index}>
