@@ -9,7 +9,7 @@ class DynamicMenu extends Component {
           return(
             <li>
               <button onClick={ () => this.props.fillTray(value) }>
-                {value}
+                {value.name} ${value.price}
               </button>
             </li>
           )

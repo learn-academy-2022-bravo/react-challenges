@@ -5,8 +5,8 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      foodMenu: ["Cheeseburger $5.99", "Chicken $5.99", "Fries $2.99"],
-      drinkMenu: ["Soda $1.99", "Lemonade $1.99", "Water $1.99"],
+      foodMenu: [{name: "Cheeseburger", price: 5.99}, {name: "Chicken", price: 5.99}, {name: "Fries", price: 2.99}],
+      drinkMenu: [{name:"Soda", price: 1.99}, {name: "Lemonade", price: 1.99}, {name: "Water", price: 1.99}],
       foodTray: []
     }
   }
@@ -35,3 +35,9 @@ class App extends Component{
   }
 }
 export default App
+
+//Psuedo Code:
+//Stretch Goal:
+//1: We want the total from the menu order
+//<h4> in the <h3> that says "Total"
+//
