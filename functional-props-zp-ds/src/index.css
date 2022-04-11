@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+img {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+li {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  
+}
+
+button {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+}

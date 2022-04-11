@@ -9,9 +9,9 @@ export default class FoodMenu extends Component {
                         return (
                             <div key={index}>
                                 <li>{item.foodName}, ${item.foodPrice}</li>
-                                {/* <img src={item.image} alt={`"Menu Item Photo" ${item.name}`} /> */}
+                                <img src={item.image} alt={`"Menu Item Photo" ${item.name}`} />
                                 <br />
-                                <button onClick={() => { this.props.addItem(item) }}>Add Item</button>
+                                <button onClick={() => { this.props.addItem(item) }}>Add Item to order</button>
                             </div>
                         )
                     })}

@@ -17,15 +17,18 @@
 import React, { Component } from 'react'
 import FoodMenu from './components/FoodMenu'
 import FoodOrder from './components/FoodOrder'
+import raman from './images/raman.png'
+import alfredo from './images/alfredo.png'
+import spaghetti from './images/spaghetti.png'
 
 export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       menu: [
-        { foodName: "Spaghetti", foodPrice: 5 },
-        { foodName: "Fettuccinni Alfredo", foodPrice: 15 },
-        { foodName: "Noodles", foodPrice: 10 }
+        { foodName: "Spaghetti", foodPrice: 5, image: spaghetti },
+        { foodName: "Fettuccinni Alfredo", foodPrice: 15, image: alfredo },
+        { foodName: "Raman Noodles", foodPrice: 10, image: raman }
       ],
       order: [],
       total: 0
