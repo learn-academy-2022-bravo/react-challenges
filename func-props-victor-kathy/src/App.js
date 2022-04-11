@@ -13,6 +13,10 @@ class App extends Component {
     }
   }
 
+  fillOrder = (item) => {
+    this.setState({order: [...this.state.order, item]})
+  }
+
 
 
   render() {
