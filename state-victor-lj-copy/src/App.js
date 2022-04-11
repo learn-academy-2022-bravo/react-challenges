@@ -16,18 +16,26 @@ addBox = () => {
     totalBoxes: [...this.state.totalBoxes,this.state.addBox]
 })}
 removeBox = () => {
-  this.setState({
-    totalBoxes: this.state.totalBoxes.pop()
-  })
+    this.state.totalBoxes.pop()
+  
 }
+
+
   render(){
     return(
-      <div >
+      <>
+      <div>
         <button onClick={this.addBox}>Add a Box</button>
         <button onClick={this.removeBox}>Remove a Box</button>
+        <p>{this.state.totalBoxes}</p>
+
+        
+        <Box />
+        {/* {this.state.totalBoxes.map((card, index) => {
+          <p key={index}>{card}</p>})} */}
         <ChallengeList />
-        <Box totalBoxes={this.state.totalBoxes}/>
-      </div>
+      </div>  
+    </>
     )
   }
 }
