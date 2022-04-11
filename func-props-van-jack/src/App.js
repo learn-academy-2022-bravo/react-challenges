@@ -1,38 +1,42 @@
 import React, { Component } from 'react';
+import MenuOrdered from './components/MenuOrdered'
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      menuItems: ["burger", "hotdog", "fried pickles"],
-      menuPrices: [5, 3, 2],
+      menuItems: [
+        {food: "burger", price: 5},
+        {food: "hotdog", price: 3},
+        {food: "fried pickles", price: 2}],
       order: []
     }
   }
 
+
   // function that passes these values into a new list
 
+  fillOrder = (item) => {
+     this.setState({order: [...this.state.order, item]})
+   }
+
+console.log(this.state.menuItems.food);
 
   render() {
     return (
-      <div>
+      <>
         <h1>Menu Application</h1>
         <tr>
-          <th>Menu Item</th>
-          <th>Price</th>
+        <MenuOrdered selectedItems ={ this.state.menuItems.food } fillOrder ={this.fillOrder} />
         </tr>
-        <tr>
-          {this.state.menuItems.map(value => {
-            return <li>{value}</li>
-          })}
-        </tr>
-        <ul>
-          {this.state.menuItems.map(value => {
-            return <li>{value}</li>
-          })}
-        </ul>
         <h2>Ordered Items</h2>
-      </div>
+
+        <ul>
+        {this.state.order.map((value, index) => {
+          return <li key={index}>{value}</li>
+  })}
+      </ul>
+      </>
     );
   }
 }
