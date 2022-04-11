@@ -3,7 +3,19 @@ import React, { Component } from 'react'
 class DynamicMenu extends Component {
   render() {
     return (
-     <Counter />
+     <>
+      <ul>
+        {this.props.menuItems.map(value => {
+          return(
+            <li>
+              <button onClick={ () => this.props.fillTray(value) }>
+                {value}
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+    </>
     )
   }
 }
