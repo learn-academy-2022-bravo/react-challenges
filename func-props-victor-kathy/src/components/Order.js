@@ -13,6 +13,9 @@ class Order extends Component {
                             <p>
                                 two
                             </p>
+                            <p>
+                                three
+                            </p>
                         </li>
                     )
                 })}
