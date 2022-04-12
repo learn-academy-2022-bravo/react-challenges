@@ -6,16 +6,19 @@ class App extends Component{
   constructor(props){
   super(props)
   this.state = {
-    foodList: [
+    foodList: [ "Chicken 5" , "Eggs 2", "Bread 3", "Bagels 4" ],
+    foodPrice: [5,2,3,4],
+
+    foodArray: [
       {name: "Chicken", price: 5},
       {name: "Eggs", price: 2},
       {name: "Beard", price: 3},
-      {name: "Bagels", price: 4}
-    ],
-
+      {name: "Bagels", price: 4},
+      ],
 
     orderList: [],
-    orderPrice: []
+    orderPrice: [],
+    total: []
   }
 }
   bag = (item) => {
@@ -26,7 +29,11 @@ class App extends Component{
     this.setState({orderPrice: [...this.state.orderPrice, number]})
     }
 
-    {foodList.name} = 
+  totalPrice = (number) => {
+    this.setState({total: [...this.state.total, number] })
+  }
+
+
   render(){
     return(
       <>
