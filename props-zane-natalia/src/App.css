@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  background-color: rgb(56, 118, 205);
+  font-style:italic
+}
+.log {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px;
+  width: 250px;
+  height: auto;
+  background-color: rgb(181, 117, 236);
+  font-style: italic;
+}
+.face {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 2px;
+  width: 250px;
+  height: auto;
+  background-color: rgb(118, 240, 234);
+  font-style: italic;
+}
+img {
+  max-width: 80%;
+  height: 80%;
+}
