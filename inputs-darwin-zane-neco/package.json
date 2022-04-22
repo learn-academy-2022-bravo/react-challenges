@@ -1,5 +1,9 @@
 {
+<<<<<<<< HEAD:props-van-victor-samir/package.json
+  "name": "props-van-victor-samir",
+========
   "name": "inputs-darwin-zane-neco",
+>>>>>>>> main:inputs-darwin-zane-neco/package.json
   "version": "0.1.0",
   "private": true,
   "dependencies": {
