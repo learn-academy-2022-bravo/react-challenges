@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div className='everything'>
         <h1>This is a test</h1>
-        <Order />
+        <Order foodList={this.state.foodList} fillOrder={this.fillOrder}/>
       </div>
     );
   }

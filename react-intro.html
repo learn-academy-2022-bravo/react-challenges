@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title> Bravo-Neco & Jack-2022</title>
+
+</head>
+<body>
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <>
+            <Header/>
+            <Subheader/>
+            <Content/>
+            <Subcontent/>
+            <Footer/>
+          </>
+        )
+      }
+    }
+    class Content extends React.Component{
+        render(){
+            return(
+          <ul>
+            <li>Beau</li>
+            <li>Jack</li>
+            <li>Earl</li>
+            <li>Tameka</li>
+            <li>Dustin</li>
+            <li>CJ</li>
+            <li>LJ</li>
+            <li>Toni</li>
+            <li>Samir</li>
+            <li>Jose</li>
+            <li>Jimmy</li>
+            <li>Van</li>
+            <li>Zane</li>
+            <li>Victor</li>
+            <li>Natalia</li>
+            <li>Amanda</li>
+            <li>Andrew</li>
+            <li>Vicente</li>
+            <li>Darwin</li>
+            <li>Jonathan</li>
+            <li>Vanessa</li>
+            <li>Neco</li>
+            <li>Kathy</li>
+          </ul>
+            )
+        }
+    }
+    class Footer extends React.Component{
+        render(){
+            return(
+                <footer>
+                    <a href="https://github.com/learn-academy-2022-bravo/Syllabus">Neco, Jack and classmates</a> |
+                    <a href="https://drive.google.com/file/d/1naf3YQ7jsbVrBnufKtOQd_A1h5sFHNxv/view"> Google Drive</a>
+
+                </footer>
+            )
+        }
+    }
+    class Header extends React.Component{
+        render(){
+            return(
+                <header>
+                    <h1>Bravo 2022</h1>
+                </header>
+            )
+        }
+    }
+
+   class Subheader extends React.Component{
+         render(){
+             return(
+               <header>
+                    <h2>React Fundamentals</h2>
+                    </header>
+          )
+        }
+   }
+
+    class Subcontent extends React.Component{
+           render(){
+             return(
+               <p>This is page that will direct you to the Bravo classes git cheat sheet and the Syllabus.
+               See link below.
+               </p>
+             )
+           }
+    }
+
+
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+  </script>
+</body>
+</html>

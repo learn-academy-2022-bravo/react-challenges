@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Intro to React</title>
+
+
+</head>
+<body>
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <>
+          <h1> Bravo </h1>
+          <List />
+          <Footer />
+          <SecondHeader />
+          <ThirdHeader />
+          <FourthHeader />
+          <VideoTime />
+          </>
+        )
+      }
+    }
+    class List extends React.Component{
+      render(){
+        return(
+          <>
+          <ul>
+            <li>Darwin</li>
+            <li>Samir</li>
+            <li>Jonathan</li>
+            <li>Kathy</li>
+            <li>Jimmy</li>
+
+          </ul>
+
+          </>
+        )
+      }
+    }
+
+    class Footer extends React.Component{
+      render(){
+        return(
+          <>
+        <footer>
+          Jonathan
+        </footer>
+          </>
+        )
+      }
+    }
+    class SecondHeader extends React.Component{
+      render(){
+        return(
+          <>
+        <h2>
+          GIT PULL
+        </h2>
+          </>
+        )
+      }
+    }
+    class ThirdHeader extends React.Component{
+      render(){
+        return(
+          <>
+        <h2>
+          GIT CHECKOUT 
+        </h2>
+          </>
+        )
+      }
+    }
+    class FourthHeader extends React.Component{
+      render(){
+        return(
+          <>
+        <h2>
+          CD IN
+        </h2>
+          </>
+        )
+      }
+    }
+    class VideoTime extends React.Component{
+      render(){
+        return(
+          <>
+          <iframe width="auto" height="auto" src="giphy.webp" frameborder="0" allowfullscreen></iframe>
+          </>
+        )
+      }
+    }
+
+
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+  </script>
+</body>
+</html>
+
+
+<!-- As a user, I see a Header component with the name of your cohort
+As a user, I can see a Content component that contains a list of all your classmates
+As a user, I can see a Footer component with your name -->

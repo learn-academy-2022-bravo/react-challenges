@@ -1,0 +1,23 @@
+.diceRolls{
+  border: 2px solid black;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+.last {
+  border: 2px solid black;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+.box {
+  border: 2px solid black;
+  height: 305px;
+  width: 610px;
+  display: flex
+}
+
+.resetButton {
+  order: 3
+}

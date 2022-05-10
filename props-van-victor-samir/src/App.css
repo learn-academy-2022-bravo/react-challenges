@@ -1,0 +1,23 @@
+.rolls {
+  border: solid 10px black;
+  width: 200px;
+  text-align: center;
+}
+.dice {
+  border: solid 10px black;
+  width: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.master {
+
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nothing{
+    margin: center;
+    align-items: center;
+}

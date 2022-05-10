@@ -1,14 +1,18 @@
+
 import React, { Component } from 'react'
 // import mockNasaData from './nasaMock.js'
+
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       nasaData: "",
-      earthPhoto: null
+
+      marsPhoto: null
     }
   }
+
 
   componentDidMount() {
     const apiKey = process.env.REACT_APP_MY_NASA_API_KEY
@@ -20,22 +24,24 @@ class App extends Component {
 
   getPic = () => {
     let randomPhoto = Math.floor(Math.random() * this.state.nasaData.length)
-    this.setState({earthPhoto: this.state.nasaData[randomPhoto].img_src})
+    this.setState({marsPhoto: this.state.nasaData[randomPhoto].img_src})
   }
 
   render() {
-    console.log(this.state.earthPhoto)
+    console.log(this.state.marsPhoto)
     return(
       <>
-        <h1>Earth Pics</h1>
-        <button onClick={this.getPic}>Get a Earth Pic</button>
+        <h1>Mars Rover Pics</h1>
+        <button onClick={this.getPic}>Get a Mars Pic</button>
         <br />
         <br />
-        {this.state.earthPhoto &&
-          <img src={this.state.earthPhoto} alt="earth rover" height="200px"/>
+        {this.state.marsPhoto &&
+          <img src={this.state.marsPhoto} alt="mars rover" height="200px"/>
         }
       </>
     )
   }
 }
-export default Appgitgit add
+
+export default App;
+
