@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+
+import React, { Component } from 'react'
+// import mockNasaData from './nasaMock.js'
+
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       nasaData: "",
+
       marsPhoto: null
     }
   }
 
- 
+
   componentDidMount() {
     const apiKey = process.env.REACT_APP_MY_NASA_API_KEY
     fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${apiKey}`)
@@ -39,6 +43,5 @@ class App extends Component {
   }
 }
 
-
-
 export default App;
+
